@@ -48,3 +48,33 @@ h1, h2 {
 .active{ /*underline the page we are at the moment, in this case in the top right menu*/
     border-bottom: #3a3a3a 1px solid;
 }
+/*puting down the image from the header*/
+#hero-outer{
+    height:600px;
+    width:100%;
+    overflow: hidden;
+
+}
+/*put the image*/
+#hero-image{ /* The first step we need to take is to step  
+    up out of our css folder into the assets  folder, we do that with the ../ syntax.  
+    From there our file path can see the images  folder, and then the image file itself. */
+    height:600px;
+    width:100%;
+    background: url('../images/hero-image.webp') no-repeat center; /*url to the image and no repeat so we only have it one time*/
+    /*center center we use it to center vertical and horizontaly */
+    animation-name:hero-zoom;/*call the animation*/
+    animation-duration: 5s;
+    animation-fill-mode: forwards;/*makes the animation to stay in the to 1.1*/
+}
+
+/*zooming*/
+@keyframes hero-zoom{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.1); /* 100% to 110% */
+    }
+
+}
