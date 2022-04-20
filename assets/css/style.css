@@ -53,8 +53,34 @@ h1, h2 {
     height:600px;
     width:100%;
     overflow: hidden;
+    position: relative;/*to be able to have a child with a relative position to it*/
 
 }
+
+/*next code is for texxt over image. 2nd # to over ride the normal syle already input to the whole body*/
+#cover-text, #cover-text h2{
+    color:#fff;
+}
+#cover-text{
+    font-size: 130%;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(241, 109, 107, 0.7);/*last value for transparency*/
+    
+    /*position relative to parent that needs to have a relative position, in this case its the #hero-outer*/
+    bottom:30px;
+    right:150px;
+
+    position: absolute;
+}
+
 /*put the image*/
 #hero-image{ /* The first step we need to take is to step  
     up out of our css folder into the assets  folder, we do that with the ../ syntax.  
@@ -63,7 +89,7 @@ h1, h2 {
     width:100%;
     background: url('../images/hero-image.webp') no-repeat center; /*url to the image and no repeat so we only have it one time*/
     /*center center we use it to center vertical and horizontaly */
-    animation-name:hero-zoom;/*call the animation*/
+    animation-name:hero-zoom;/*call the animation zooming*/
     animation-duration: 5s;
     animation-fill-mode: forwards;/*makes the animation to stay in the to 1.1*/
 }
