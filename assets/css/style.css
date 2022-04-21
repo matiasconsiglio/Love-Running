@@ -204,3 +204,20 @@ hr {
 #times h2{
     color: #fafafa;
 }
+
+footer{/*following multiply sizes to keep visual order*/
+    height: 150px;
+}
+.social-networks{/*put the unorder list in the center of the footer*/
+    text-align: center;
+}
+
+.social-networks > li{/*puting icons horizontally*/
+    display: inline;
+}
+.social-networks i{/*style for icons*/
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
