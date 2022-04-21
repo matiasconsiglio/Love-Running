@@ -261,3 +261,15 @@ footer{/*following multiply sizes to keep visual order*/
         display:none;
     }
 }
+/*for phones in general*/
+/*For medium screen sixes from 950px wide and down*/
+@media screen and (max-width:950px){
+        #menu{
+        clear:left;
+        float:left;/*this 2 so the rest of the header goes bellow the logo*/
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;/* last 3 to give space from the left and between logo and menu*/
+        }  
+
+}
