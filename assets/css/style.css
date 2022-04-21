@@ -204,7 +204,7 @@ hr {
 #times h2{
     color: #fafafa;
 }
-
+/*footer*/
 footer{/*following multiply sizes to keep visual order*/
     height: 150px;
 }
@@ -221,12 +221,43 @@ footer{/*following multiply sizes to keep visual order*/
     padding: 5%;
     color: #3a3a3a;
 }
+/*gallery 2nd page*/
 #photos{
     clear: both;/*so the photos starts after the header*/
     line-height: 0;/*no horizontal space between photos*/
-    column-count:4;/*magi trick to align photos in columns*/
+    column-count:4;/*magi trick to align photos in columns masonry styke*/
     column-gap: 0;/*taking out the vertical separation*/
 }
 #photos > img{
     width:100%;/*this will make the photos to use the space correctly inside the columns*/
+}
+
+/* media queries, used for change in screen size */
+
+/*for larger to medium screens size from 1200px wide and down*/
+/* use the chrome inspection tool to see in wich size when you are shortening the window the structure gets compromise*/
+@media screen and (max-width:1200px){
+    #club-ethos{
+        width:65%;
+        height:1200px; /*double in verticla but shorter in width*/
+        margin: 0 auto;/*centering*/
+    }
+    #welcome{
+        padding: 30px 0;/*more space vertical for the title of the section*/
+        margin: 0;/*clean vertical gap*/
+    }
+    #left-about, #right-about{
+        width: 100%;
+        float: left;
+        padding:0;
+    }
+    #center-about{
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    hr{
+        display:none;
+    }
 }
