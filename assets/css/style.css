@@ -221,3 +221,12 @@ footer{/*following multiply sizes to keep visual order*/
     padding: 5%;
     color: #3a3a3a;
 }
+#photos{
+    clear: both;/*so the photos starts after the header*/
+    line-height: 0;/*no horizontal space between photos*/
+    column-count:4;/*magi trick to align photos in columns*/
+    column-gap: 0;/*taking out the vertical separation*/
+}
+#photos > img{
+    width:100%;/*this will make the photos to use the space correctly inside the columns*/
+}
