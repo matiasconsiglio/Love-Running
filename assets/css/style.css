@@ -189,3 +189,18 @@ hr {
     width: 100%;
     overflow:hidden;
 }
+
+#times div{
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);/*gives oppaci to the background image so the text can be readed better*/
+    width: 20%; /*5 panels horizonal so each div uses 20%*/
+    height: 300px;/*for stetic we use half the size of the rest of the body parts*/
+    float: left;/*float left so they align horizontaly*/
+    padding:30px 0 0 10px;/*top right bottom left, clockwise */
+    text-align: center;
+    border: 2px solid white;/*thickness type color*/
+    box-sizing: border-box;/* super important, this one says to the browser that the border width in the total size of the element*/
+}
+#times h2{
+    color: #fafafa;
+}
